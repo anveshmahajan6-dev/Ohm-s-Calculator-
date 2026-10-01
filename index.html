@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+        body{
+          background-color:black;
+          color:white;
+          border:2px solid white ; 
+          border-radius:05px;
+          text-align:center ; 
+          width:300px;
+          height:300px;
+          display:block;
+          margin:auto;
+          margin-top:50px;
+        }
+        input{
+          width:180px;
+          text-align:center;
+          margin-top:10px;
+        }
+        h1{
+          color:yellow;
+        }
+      </style>
+    <script>
+      function anv5(){
+        let R = Number(document.getElementById("anv").value) ; 
+        let I = Number(document.getElementById("anv3").value) ; 
+
+        let V = I*R ; 
+
+        document.getElementById("anv2").value=V  ; 
+      }
+      function anv6(){
+        let R = Number(document.getElementById("anv").value) ; 
+        let V = Number(document.getElementById("anv2").value) ; 
+
+        let I = V/R ; 
+
+        document.getElementById("anv3").value = I ;  
+      }
+      function anv4(){
+        let V = Number(document.getElementById("anv2").value) ; 
+        let I = Number(document.getElementById("anv3").value) ; 
+
+        let R = V/I ; 
+
+        document.getElementById("anv").value = R ;  
+      }
+      function anv7(){
+        document.getElementById("anv").value = "" ; 
+        document.getElementById("anv2").value ="" ;
+        document.getElementById("anv3").value = "" ; 
+      }
+    </script>
+  </head>
+  <body>
+    <h1>#OHM LAW`S</h1> 
+    <input id="anv" placeholder="ENTER THE RESISTANCE" type="number">
+    <br><br>
+    <input id="anv2" placeholder="ENTER THE VOLTAGE" type="number">
+    <br><br>
+    <input id="anv3" placeholder="ENTER THE CURRENT" type="number">
+    <br><br><br>
+    <button onclick="anv4()"><b>R</b></button>
+    <button onclick="anv5()"><b>V</b></button>
+    <button onclick="anv6()"><b>I</b></button>
+    <button onclick="anv7()"><b>CLEAR</b></button>
+    <a href="https://www.instagram.com/anveshmahajan_3009/" target="_blank"><button>🅾</button></a>
+  </body>
+</html>
